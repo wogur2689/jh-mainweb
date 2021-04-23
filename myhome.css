@@ -1,0 +1,110 @@
+	@charset "utf-8";
+	div {
+		border: 1px solid #ccc;
+	}
+	#container {
+		border: 0px solid #ccc;
+		width:1050px;
+		padding:10px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#header {
+	background:red;
+	padding:10px;
+	margin-bottom:5px;
+	}
+	#contents {
+	width:780px;
+	padding-bottom:20px;
+	margin-bottom:10px;
+	float:left;
+	}
+	#contents-Timetable {
+	clear:both;
+	width:780px;
+	margin-bottom:10px;
+	float:left; 
+	}
+	#contents-resume {
+	clear:both;
+	width:780px;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	float:left;
+	} 
+	#contents-gugudan {
+	clear:both;
+	margin-bottom:20px; 
+	} 
+	#sidebar-loginbox {
+	display:inline-block;	
+	background-color:yellow;
+	margin-left:5px;
+	width:260px;
+	height:150px;
+	text-align:center;
+	margin-bottom:10px;
+	}
+	#sidebar-gilbut {
+	display:inline-block;
+	width:260px;
+	height:375px;
+	padding:0px;
+	margin-bottom:10px;
+	margin-left:5px;
+	}
+	#sidebar-comhal {
+	display:inline-block;
+	width:220px;
+	height:375px;
+	padding:10px;
+	margin-bottom:10px;
+	margin-left:10px;
+	}
+	#sidebar-WarningMask{
+	background-image:url('images/pollutionMask.jpg');
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	display:inline-block;
+	width:220px;
+	padding:20px;
+	margin-bottom:10px;
+	margin-left:5px;
+	}
+	/*
+	#sidebar-mysql {
+	width:220px;
+	padding:20px;
+	}
+	*/
+	#footer {
+	clear:both;
+	padding:20px;
+	}
+	#sidebar-1 {
+	width:100px;
+	height:130px;
+	margin:0px;
+	border:0px;
+	padding:0px;
+	}/*
+	.box1 {
+	padding:20px;
+	margin-right:5px;
+	float:left;
+	}
+	.box2 {
+	padding:20px;
+	margin-right:2px;
+	float:left;
+	}*/
+	.dno1 { Color:black; text-align:center; }
+	
+	body { 
+	background:  -webkit-linear-gradient(top, yellow ,white 10%);
+	background:  -moz-linear-gradient(bottom, yellow, white 10%);
+	background:  -o-linear-gradient(bottom, yellow, white 10%);
+	background:  linear-gradient(to bottom, yellow, white 10%);
+	}
+	a {text-decoration:none;}
