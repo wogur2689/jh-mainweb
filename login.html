@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>로그인</title>
+	<link href="myhome.css" rel="stylesheet">
+	<style>
+		#container {
+			height: 1000px;
+		}
+		.content-login {
+			border:  none;
+			text-align: center;
+			width: 1050px;
+			height: 500px;
+		}
+		legend {
+			margin-top: 40px;
+			font-size: 30px;
+		}
+		input {
+			display: inline-block;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom-width: 2px;
+			border-bottom-style: solid;
+			border-bottom-color: black;
+			width: 530px;
+			margin-top: 40px;
+			font-size: 20px;
+		}
+		.sbutton {
+			margin-top: 40px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: black;
+			width: 200px;
+			height: 50px;
+			background: orange;
+			font-size: 20px;
+		}
+		img {
+			width: 400px;
+			height: 350px;
+		}
+		.loginImage {
+			border: none;
+			display: inline-block;
+		}
+		.loginBox {
+			border: none;
+			display: inline-block;
+			width: 600px;
+			height: 500px;
+		}
+		#footer{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div align="center">
+	<a href="https://www.naver.com" style="color:black;" target="_blank">네이버</a> |
+	<a href="https://www.daum.net"  style="color:black;" target="_blank">다음</a> |
+	<a href="https://www.youtube.com" style="color:black;" target="_blank">유튜브</a> |
+	<a href="https://www.facebook.com" style="color:black;" target="_blank">페이스북</a> |
+	<a href="http://www.dongyang.ac.kr" style="color:black;" target="_blank">동양미래대학교</a> |
+	<a href="http://www.kosaf.go.kr" style="color:black;" target="_blank">한국장학재단</a> |
+	<a href="http://www.google.co.kr" style="color:black;" target="_blank">구글</a> |
+	<a href="http://www.itsdong.com" style="color:black;" target="_blank">아이티동스쿨</a> |
+	<a href="http://www.codeit.kr" style="color:black;" target="_blank">코드잇</a> |
+	<a href="http://www.instagram.com" style="color:black;" target="_blank">인스타그램</a> |
+	<a href="http://license.korcham.net" style="color:black;" target="_blank">대한상공회의소 자격평가사업단</a> |
+	<a href="http://www.kakaocorp.com/service/KakaoTalk?lang=ko" style="color:black;" target="_blank">카카오톡</a> |
+	<a href="http://line.me" style="color:black;" target="_blank">라인</a> |
+	<a href="http://twitter.com" style="color:black;" target="_blank">트위터</a> |
+	<a href="http://www.zoom.us" style="color:black;" target="_blank">ZOOM</a> 
+</div>
+<div id="container">
+	<div id="header">
+		<h1 class="header_text">sweet my home.</h1>
+		<h4 class="header_text">로그인!</h4>
+	</div>
+	<div class="content-login">
+		<div class="loginImage">
+			<img src="images/자물쇠.png" alt="">
+		</div>
+		<div class="loginBox">
+			<form name="login" method="post" action="login.php">
+				<legend>로그인!</legend>
+					<p>
+						<input type="text" name="id" placeholder="아이디"> 
+					</p>
+					<p>
+						<input type="password" name="password" placeholder="비밀번호">
+					</p>
+					<p>
+						<input type="submit" class="sbutton" value="로그인">
+					</p>
+					<a href="find.php">아이디/비밀번호 찾기</a>
+			</form> 
+		</div>
+	</div>
+</div>
+</body>
+</html>

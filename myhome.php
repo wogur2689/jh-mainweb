@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>sweet my home</title>
-	<link href="myhome_jaro/myhome.css" rel="stylesheet">
+	<link href="myhome.css" rel="stylesheet">
 </head>
 <body>
 <div align="center">
@@ -25,28 +25,40 @@
 <div id="container">
 
 	<div id="header">
-		<h1 class="dno1">sweet my home.</h1>
-		<h4 class="dno1">안녕하세요!</h4>
+		<h1 class="header_text">sweet my home.</h1>
+		<h4 class="header_text">안녕하세요!</h4>
 	</div>
-	
 		<div id="contents" align="center">
-			<img src="myhome_jaro/images/covid-19.jpg" width="780" height="100"><br>
+			<img src="images/covid-19.jpg" width="780" height="100"><br>
 			<form method=get action="https://www.google.com/search" target="_blank" accept-charset="utf-8" onsubmit="emulAcceptCharset(this)">
 			<b>Google 검색 :</b> <input type=text name=q size=20 maxlength=50 placeholder="Google search" style="text-align:center; font-size:15px;">
 			<button type="submit" style="width:80px; height:25px; bakground:#4d90fe; color=:#ffffff font-size:14px;">검 색</button>
 			</form>
 		</div>
-		
 		<div id="sidebar-loginbox">
-			<form name ="login_form;" method="post;" action="membership_form.php;">
-			로그인
-			<p>아 이 디 : <input type="text" size="10px"></p>
-			<p>비밀번호: <input type="password" size="10px"></p>
-			<p><input type="submit" value="로그인">
-			<a href="myhome_jaro/membership_form.php"> 회원가입</a></p>
-			</form>
+		<?php 
+			session_start();
+			if(isset($_SESSION["userid"])) 
+				$userid = $_SESSION["userid"];
+			else 
+				$userid = " ";
+			$logged ="".$userid."님 환영합니다.";
+			if($userid != " ") {
+		?>
+					<p><?=$logged?></p>
+					<p>
+						<a href="board_list.php">게시판</a>
+						<a href="#">마이페이지</a>
+						<a href="logout.php">로그아웃</a></p>
+		<?php
+			} else { 
+		?>
+					<a href="login.html">로그인</a>
+					<a href="membership_form.php"> 회원가입</a>
+		<?php
+			}
+		?>
 		</div>
-		
 		<div align="center" id="contents-Timetable">
 		<table border="1"> 
 		<caption id="2a2a"><strong><h2>나의 학교 시간표.</h2></strong></caption>
@@ -119,10 +131,10 @@
 		</table>
 		</div>  <!--end of contents-Timetable-->
 		
-		<div id="sidebar-gilbut">
+		<div id="sidebar-weather">
 		<IFRAME src=http://www.nalsee.com/nalsee/menu.html?id=jm5686 WIDTH=100% HEIGHT=100% frameborder=no scrolling=no></iframe>
 			<!--<h3>이책은 어떠신가요?</h3>
-			<img src="myhome_jaro/images/gilbut.jpg" width="100" height="130">
+			<img src="images/gilbut.jpg" width="100" height="130">
 			<dl>
 	  	  	  <dt>이건 어떠세요?</dt>
 	  	  	  <dd>책제목: 2021 시나공<br> 
@@ -178,37 +190,36 @@
 			<h5 style="color:white">지금바로 검사하세요!</h5>
 			<a href="#" style="color:white">더 자세히 알아보기</a>
 		</div>	
-
 		
 		<div id="contents-gugudan" align="center">
-			<? include "./myhome_jaro/gugudan.php"; ?>
+			<h5>구구단</h5>
+			<table border='1' width='1000px'>
+			<tr bgcolor='#ccccc' align='center'>
+				<td>2단</td>
+				<td>3단</td>
+				<td>4단</td>
+				<td>5단</td>
+				<td>6단</td>
+				<td>7단</td>
+				<td>8단</td>
+				<td>9단</td>
+			</tr>
+			<?php
+				for($b=1; $b<=9; $b++) {
+					echo "<tr align=center'>";
+	  				for($a=2; $a<=9; $a++) {
+	  					$c=$a*$b;
+	  					echo "<td>{$a}X{$b}=$c</td>";
+	  				}
+					echo"</tr>";
+				}
+			?>
+			</table>
 		</div>  <!--end of gugudan--> 
-		
-		<!--
-		<div id="sidebar-mysql">
-		<? 
-		$connect=mysql_connect("localhost/myhome.php","wogur","2580");
-		mysql_select_db("wogur_db",$connect);
-	
-		$sql="insert into member(num, name, address, tel, email, gender, age)";
-		$sql=" values (2, '한현호', '대전광역시', '010-2527-2185', 'eptlqm@naver.com', '남', 23)";
-	
-		$result=mysql_query($sql);
-
-		if($result) {
-		echo "레코드 삽입완료."; }
-		else {
-		echo "레코드 삽입실패."; }
-
-		mysql_close($connect);
-		?>
-		
-		</div>
-		</div>	-->
-
-	<div id="footer">
+	<div id="footer" align="center">
 		<h2>이용해주셔서 감사합니다!</h2>
 		<input type="button" value="홈페이지 닫기" onclick="window.close()">
+		<p>제작자: 길재혁</p>
 	</div>
 </div>
 
