@@ -1,0 +1,82 @@
+@charset "utf-8";
+    body { 
+        background: -webkit-linear-gradient(top, yellow ,white 10%);
+        background: -moz-linear-gradient(top, yellow ,white 10%);
+        background: -o-linear-gradient(top, yellow ,white 10%);
+        background: linear-gradient(top, yellow ,white 10%);
+		background-repeat: no-repeat;
+    }
+	div {
+		border: 1px solid #ccc;
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	#link {
+		display: inline-block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+    #container {
+		border: 0px solid #ccc;
+		width:1050px;
+		padding:10px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#header {
+		background:red;
+		padding:10px;
+		margin-bottom:5px;
+	}
+	.header_text { 
+		Color:black; 
+		text-align:center; 
+	}
+    .contents_member{
+		float: left;
+		padding:5px;
+		height:380px;
+	}
+	#sidebar-comhal {
+		display:inline-block;
+		width:265px;
+		height:380px;
+		padding:10px;
+		margin-bottom:10px;
+		margin-left:10px;
+	}
+	#id_DISTINCT {
+		padding:0px;
+		border-left:0px;
+		width: 150px;
+	}
+	.id_check {
+		background-color: red;
+		color: white;
+		width: 120px;
+		height: 30px;
+		cursor: pointer;
+	}
+	.contents_member_finish{
+		border:0px;
+		display:inline;
+		padding-right:100px;
+	}
+	.contents_member_finish input{
+		background: green;
+		color: white;
+		margin-left:100px;
+
+	} 
+	#Toggi{
+		width:1050px;
+	}
+
+    #footer {
+		clear:both;
+		padding:20px;
+    }

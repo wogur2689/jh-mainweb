@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>myhome회원가입!</title>
 	<link href="css/member.css" type="text/css" rel="stylesheet">
-	<script>
+<script>
 		function checkId() {
-			window.open("member_check_id.php?id=" + document.membership_form.id.value,"IDcheck",
-			"left=700,top=300,width=350,height=200,scrollbars=no,resizable=yes");
+            let as = document.getElementById("id").value;
+            location.href="member_check_id.php?id="+as;
+            //window.open("member_check_id.php?id=" + documen.membership_form.id.value,"IDcheck",
+			//"left=700,top=300,width=350,height=200,scrollbars=no,resizable=yes");
 		}	
-	</script>
+</script>
 </head>
 <body>
 <div align="center">
@@ -42,7 +44,7 @@
 			<tr>
 				<td align="right">* 아이디 :</td>
 				<td style="border-right:0;">
-				<input type="text" size="15" minlength="4" maxlength="10" name="id" value="guest" autofocus required>
+				<input type="text" size="15" minlength="4" maxlength="10" id="id" name="id" required>
 				<input type="button" value="중복확인" class="id_check" onclick="checkId();">
 				<small style="color:red;">4~10자리 이내의 문자와 숫자</small>
 				</td>

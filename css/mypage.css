@@ -1,0 +1,118 @@
+@charset "utf-8";
+    body { 
+        background:  -webkit-linear-gradient(top, yellow ,white 10%);
+        background:  -moz-linear-gradient(top, yellow ,white 10%);
+        background:  -o-linear-gradient(top, yellow ,white 10%);
+        background:  linear-gradient(top, yellow ,white 10%);
+		background-repeat: no-repeat;
+    }
+	div {
+		border: 1px solid #ccc;
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	table {
+		margin-left: 30px;
+	}
+	#link {
+		display: inline-block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+    #container {
+		border: 0px solid #ccc;
+		width:1050px;
+		padding:10px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#header {
+		background:red;
+		padding:10px;
+		margin-bottom:5px;
+	}
+	.header_text { 
+		Color:black; 
+		text-align:center; 
+	}
+    #contents {
+		width:780px;
+		padding-bottom:20px;
+		margin-bottom:10px;
+		float:left;
+	}
+	#contents-Timetable {
+		clear:both;
+		width:780px;
+		height:375px;
+		padding-bottom:25px;
+		margin-bottom:10px;
+		float:left; 
+	}
+    #contents-data {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    #contents-data h2 {
+        margin-left: 20px;
+    }
+    #contents-data ul li {
+        list-style-type: none;
+    }
+    .data {
+        width: 100px;
+        height: 20px;
+        margin-right: 40px;
+    }
+	#sidebar-loginbox {
+		display: inline-block;	
+		background-color:yellow;
+		margin-left:5px;
+		width: 260px;
+		height: 150px;
+		margin-bottom:10px;
+		text-align: center;
+	}
+	.login_tema_before {
+		border: solid black 1px;
+		background-color: white;
+		display: inline-block;
+		margin-top: 20px;
+		line-height: 100px;
+		text-align: center;
+		width: 100px;
+		height: 100px;
+	}
+	.login_tema_before a {
+		font-size: 20px;
+	}
+	.login_tema_before:hover {
+		background-color: chocolate;
+	}
+	.login_tema_after {
+		border: solid black 1px;
+		background-color: white;
+		display: inline-block;
+		margin-top: 20px;
+		line-height: 10px;
+		text-align: center;
+		width: 70px;
+		height: 40px;
+		line-height: 35px;
+	}
+	.login_tema_after:hover {
+		background-color: chocolate;
+	}
+	.login_tema_after a {
+		font-size: 16px;
+	}
+    #footer {
+		clear:both;
+		padding:20px;
+	}
+	/* covid-19 */
+	

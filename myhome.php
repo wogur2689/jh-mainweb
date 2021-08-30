@@ -1,29 +1,33 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>sweet my home</title>
-	<link href="myhome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/index.css?after">
 </head>
 <body>
-<div align="center">
-	<a href="https://www.naver.com" style="color:black;" target="_blank">네이버</a> |
-	<a href="https://www.daum.net"  style="color:black;" target="_blank">다음</a> |
-	<a href="https://www.youtube.com" style="color:black;" target="_blank">유튜브</a> |
-	<a href="https://www.facebook.com" style="color:black;" target="_blank">페이스북</a> |
-	<a href="http://www.dongyang.ac.kr" style="color:black;" target="_blank">동양미래대학교</a> |
-	<a href="http://www.kosaf.go.kr" style="color:black;" target="_blank">한국장학재단</a> |
-	<a href="http://www.google.co.kr" style="color:black;" target="_blank">구글</a> |
-	<a href="http://www.itsdong.com" style="color:black;" target="_blank">아이티동스쿨</a> |
-	<a href="http://www.codeit.kr" style="color:black;" target="_blank">코드잇</a> |
-	<a href="http://www.instagram.com" style="color:black;" target="_blank">인스타그램</a> |
-	<a href="http://license.korcham.net" style="color:black;" target="_blank">대한상공회의소 자격평가사업단</a> |
-	<a href="http://www.kakaocorp.com/service/KakaoTalk?lang=ko" style="color:black;" target="_blank">카카오톡</a> |
-	<a href="http://line.me" style="color:black;" target="_blank">라인</a> |
-	<a href="http://twitter.com" style="color:black;" target="_blank">트위터</a> |
-	<a href="http://www.zoom.us" style="color:black;" target="_blank">ZOOM</a> 
-</div>
+<div id="link">
+        <a href="https://www.naver.com" target="_blank">네이버</a> |
+        <a href="https://www.daum.net" target="_blank">다음</a> |
+        <a href="https://www.youtube.com" target="_blank">유튜브</a> |
+        <a href="https://www.facebook.com" target="_blank">페이스북</a> |
+        <a href="http://www.dongyang.ac.kr" target="_blank">동양미래대학교</a> |
+        <a href="http://www.kosaf.go.kr" target="_blank">한국장학재단</a> |
+        <a href="http://www.google.co.kr" target="_blank">구글</a> |
+        <a href="http://www.codeit.kr" target="_blank">코드잇</a> |
+        <a href="http://www.instagram.com" target="_blank">인스타그램</a> |
+        <a href="http://www.kakaocorp.com/service/KakaoTalk?lang=ko" target="_blank">카카오톡</a> |
+        <a href="http://line.me" target="_blank">라인</a> |
+        <a href="http://twitter.com" target="_blank">트위터</a> |
+        <a href="http://www.zoom.us" target="_blank">ZOOM</a> |
+        <a href="https://github.com" target="_blank">github</a> |
+        <a href="https://comento.kr" target="_blank">코멘토</a> |
+        <a href="https://www.comcbt.com" target="_blank">cbt</a> |
+        <a href="https://www.codingworldnews.com" target="_blank">코딩월드뉴스</a>
+    </div>
 <div id="container">
-
 	<div id="header">
 		<h1 class="header_text">sweet my home.</h1>
 		<h4 class="header_text">안녕하세요!</h4>
@@ -45,16 +49,27 @@
 			$logged ="".$userid."님 환영합니다.";
 			if($userid != " ") {
 		?>
-					<p><?=$logged?></p>
-					<p>
-						<a href="board_list.php">게시판</a>
-						<a href="#">마이페이지</a>
-						<a href="logout.php">로그아웃</a></p>
+						<p>
+							<?=$logged?>
+						</p>
+						<div class="login_tema_after">
+							<a href="board_list.php">게시판</a>
+						</div>
+						<div class="login_tema_after">
+						<a href="mypage.php">내정보</a>
+						</div>
+						<div class="login_tema_after">
+						<a href="logout.php">로그아웃</a>
+						</div>
 		<?php
 			} else { 
 		?>
-					<a href="login.html">로그인</a>
-					<a href="membership_form.php"> 회원가입</a>
+					<div class="login_tema_before">
+						<a href="login.html">로그인</a>
+					</div>
+					<div class="login_tema_before">
+						<a href="membership_form.html"> 회원가입</a>
+					</div>
 		<?php
 			}
 		?>
@@ -133,19 +148,40 @@
 		
 		<div id="sidebar-weather">
 		<IFRAME src=http://www.nalsee.com/nalsee/menu.html?id=jm5686 WIDTH=100% HEIGHT=100% frameborder=no scrolling=no></iframe>
-			<!--<h3>이책은 어떠신가요?</h3>
-			<img src="images/gilbut.jpg" width="100" height="130">
-			<dl>
-	  	  	  <dt>이건 어떠세요?</dt>
-	  	  	  <dd>책제목: 2021 시나공<br> 
-	  	  	  컴퓨터활용능력 1급실기</dd>
-	  	  	  <dd>가격:36000원</dd>
-	 		  <dd>출판사:길벗</dd>
-			</dl>-->
 		</div>
 		
 	
-		<div align="center" id="contents-resume"> 
+		<div id="contents-resume">
+			<h2 align="center">코로나 현황(누적)</h2>
+			<div class="covid">
+				<span class="covid_19">치료중</span>
+				<span class="covid_19">격리해제</span>
+				<span class="covid_19">사망자</span>
+				<span class="covid_19">확진자</span>
+				<span class="covid_19" style="border-right: none;">기준일</span>
+			</div>
+			<div class="covid_data">
+			<?php
+			$ch = curl_init();
+			$url = 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson'; /*URL*/
+			$queryParams = '?' . urlencode('ServiceKey') .'='.'5bYn08E59pd5Ra6rf2mgWSJkpQLh2ZF0aZzOnORHR8EUjgNfhPPmzujWj7aYKJyD0H4cPXj3A05r043diJ%2BIaA%3D%3D'; /*Service Key*/
+			$queryParams .= '&' . urlencode('pageNo') . '=' . urlencode('1'); /**/
+			$queryParams .= '&' . urlencode('numOfRows') . '=' . urlencode('1'); /**/
+			$queryParams .= '&' . urlencode('startCreateDt') . '=' . urlencode(date("Ymd")); /**/
+			$queryParams .= '&' . urlencode('endCreateDt') . '=' . urlencode(date("Ymd")); /**/
+
+			curl_setopt($ch, CURLOPT_URL, $url . $queryParams);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_HEADER, false);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+			$response = curl_exec($ch);
+			curl_close($ch);
+
+			echo $response;
+			
+			?>
+			</div>
+			<!--
  			<table border="1">
 		 	  <caption><strong>홈페이지 제작자 소 개 서</strong></caption>
 		  	    <tr>
@@ -182,14 +218,76 @@
 			     <th colspan="3">dongyang@dy.ac.kr</th>
 			   </tr>
 			</table>	
+		-->
 		</div>
-
-		<div id="sidebar-WarningMask">
-			<h4 style="color:white">당신의 마스크.</h4>
-			<h4 style="color:white">코로나로 부터 안전한가요?</h4>
-			<h5 style="color:white">지금바로 검사하세요!</h5>
-			<a href="#" style="color:white">더 자세히 알아보기</a>
+		<div class="sidebar-Timer">
+		<b>스톱워치</b>
+            <strong>
+                <span id="hour">00</span>
+                <span>:</span>
+                <span id="minute">00</span>
+                <span>:</span>
+                <span id="second">00</span>
+                <span>.</span>
+                <span id="teMilli">00</span>
+            </strong>
+            <button id="btnsta">시작</button>
+            <button id="btnsto">멈춤</button>
+            <button id="btnres">초기화</button>
 		</div>	
+		<script type="text/javascript">
+        let h = 0; //시 
+        let m = 0; //분
+        let s = 0; //초
+        let t = 0; //밀리
+        let saveH = document.getElementById("hour"); //현재 시
+        let saveM = document.getElementById("minute"); //현재 분
+        let saveS = document.getElementById("second"); //현재 초
+        let saveT = document.getElementById("teMilli"); //현재 밀리
+        let btnStart = document.getElementById("btnsta"); //시작버튼
+        let btnStop = document.getElementById("btnsto"); //멈춤버튼
+        let btnReset = document.getElementById("btnres"); //초기화버튼
+        let intervalId;
+
+        btnStart.onclick = function() {
+           clearInterval(intervalId)
+           intervalId = setInterval(operateTimer, 10) 
+        }
+        btnStop.onclick = function() {
+           clearInterval(intervalId)
+        }
+        btnReset.onclick = function() {
+           clearInterval(intervalId)
+           h = 0; m = 0; s = 0; t = 0;
+           saveH.textContent = "00";
+           saveM.textContent = "00";
+           saveS.textContent = "00";
+           saveT.textContent = "00";
+        }
+        function operateTimer() {
+            t++;
+            console.log(t);
+            saveT.textContent = t > 9 ? t : '0' + t;
+            if(t > 99){
+                s++;
+                saveS.textContent = s > 9 ? s : '0' + s;
+                t = 0;
+                saveT.textContent = "00";
+            }
+            if(s > 59){
+                m++;
+                saveM.textContent = m > 9 ? m : '0' + m;
+                s = 0;
+                saveS.textContent = "00";
+            }
+            if(m > 59){
+                h++;
+                saveH.textContent = h > 9 ? h : '0' + h;
+                m = 0;
+                saveM.textContent = "00";
+            }
+        }
+    	</script>
 		
 		<div id="contents-gugudan" align="center">
 			<h5>구구단</h5>

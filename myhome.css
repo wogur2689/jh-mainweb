@@ -1,4 +1,4 @@
-	@charset "utf-8";
+@charset "utf-8";
 	div {
 		border: 1px solid #ccc;
 	}
@@ -71,12 +71,6 @@
 		margin-bottom:10px;
 		margin-left:5px;
 	}
-	/*
-	#sidebar-mysql {
-	width:220px;
-	padding:20px;
-	}
-	*/
 	#footer {
 		clear:both;
 		padding:20px;
@@ -87,17 +81,7 @@
 		margin:0px;
 		border:0px;
 		padding:0px;
-	}/*
-	.box1 {
-	padding:20px;
-	margin-right:5px;
-	float:left;
 	}
-	.box2 {
-	padding:20px;
-	margin-right:2px;
-	float:left;
-	}*/
 	.header_text { Color:black; text-align:center; }
 	
 	body { 

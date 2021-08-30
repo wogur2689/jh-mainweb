@@ -1,4 +1,5 @@
 <?php
+	header("Content-Type: text/html;charset=UTF-8");
 	$id = $_POST["id"];
 	$name = $_POST["name"];
 	$password = $_POST["password"];
@@ -10,7 +11,8 @@
 	$email1 = $_POST["email1"];
 	$email2 = $_POST["email2"];
 	$email = $email1."@".$email2;
-	$age = $age;
+	$age = $_POST["age"];
+
 	if($email1 == null || $email2 == "선택") {
 		$email = null;
 	}

@@ -1,7 +1,7 @@
 <?php
   header("Content-Type: text/html;charset=UTF-8");
   session_start();
-  unset($_SESSION["name"]);
+  unset($_SESSION["userid"]);
   
   echo("
        <script>

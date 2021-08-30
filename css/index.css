@@ -1,0 +1,247 @@
+@charset "utf-8";
+    body { 
+        background:  -webkit-linear-gradient(top, yellow ,white 10%);
+        background:  -moz-linear-gradient(top, yellow ,white 10%);
+        background:  -o-linear-gradient(top, yellow ,white 10%);
+        background:  linear-gradient(top, yellow ,white 10%);
+		background-repeat: no-repeat;
+    }
+	div {
+		border: 1px solid #ccc;
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	#link {
+		display: inline-block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+    #container {
+		border: 0px solid #ccc;
+		width:1050px;
+		padding:10px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#header {
+		background:red;
+		padding:10px;
+		margin-bottom:5px;
+	}
+	.header_text { 
+		Color:black; 
+		text-align:center; 
+	}
+    #contents {
+		width:780px;
+		padding-bottom:20px;
+		margin-bottom:10px;
+		float:left;
+	}
+	#contents-Timetable {
+		clear:both;
+		width:780px;
+		height:375px;
+		padding-bottom:25px;
+		margin-bottom:10px;
+		float:left; 
+	}
+	#contents-resume {
+		clear:both;
+		width:780px;
+		height:180px;
+		margin-bottom:10px;
+		float:left;
+	} 
+	#contents-gugudan {
+		clear:both;
+		margin-bottom:20px;
+		padding-bottom:20px; 
+	} 
+	#sidebar-loginbox {
+		display: inline-block;	
+		background-color:yellow;
+		margin-left:5px;
+		width: 260px;
+		height: 150px;
+		margin-bottom:10px;
+		text-align: center;
+	}
+	.login_tema_before {
+		border: solid black 1px;
+		background-color: white;
+		display: inline-block;
+		margin-top: 20px;
+		line-height: 100px;
+		text-align: center;
+		width: 100px;
+		height: 100px;
+	}
+	.login_tema_before a {
+		font-size: 20px;
+	}
+	.login_tema_before:hover {
+		background-color: chocolate;
+	}
+	.login_tema_after {
+		border: solid black 1px;
+		background-color: white;
+		display: inline-block;
+		margin-top: 20px;
+		line-height: 10px;
+		text-align: center;
+		width: 70px;
+		height: 40px;
+		line-height: 35px;
+	}
+	.login_tema_after:hover {
+		background-color: chocolate;
+	}
+	.login_tema_after a {
+		font-size: 16px;
+	}
+	#sidebar-weather {
+		display:inline-block;
+		width:260px;
+		height:400px;
+		padding:0px;
+		margin-bottom:10px;
+		margin-left:5px;
+	}
+	.sidebar-Timer{
+		background:-webkit-linear-gradient(top, #ae4eff, #3567ff);
+		background-repeat: no-repeat;
+		display:inline-block;
+		width:260px;
+		height:180px;
+		margin-bottom:10px;
+		margin-left:5px;
+		text-align: center;
+		line-height: 50px;
+	}
+	.sidebar-Timer b {
+		font-size: 30px;
+	}
+	.sidebar-Timer strong {
+        display: block;
+        font-size: 30px;
+	}
+	.sidebar-Timer button {
+		width: 60px;
+        height: 50px;
+        font-size: 15px;
+		color: white;
+        margin-left: 5px;
+        margin-right: 5px;
+        background: black;
+        border: solid 1px black;
+	}
+    #footer {
+		clear:both;
+		padding:20px;
+	}
+	/* covid-19 */
+	.covid {
+		width: 100%;
+		background-color: aqua;
+		font-weight: bold;
+		margin: 0px;
+	}
+	.covid_19 {
+		display: inline-block;
+		border-right: solid black 1px;
+		width: 150px;
+		text-align: center;
+		margin: 0px;
+	}
+	.covid_data {
+		width: 100%;
+		background-color: chartreuse;
+		margin: 0px;
+	}
+	resultcode {
+		display: none;
+	}
+	resultmsg {
+		display: none;
+	}
+	accdefrate {
+		/* 누적 확진률 */
+		display: none;
+	}
+	accexamcnt {
+		/* 누적 검사 수 */
+		display: none;
+	}
+	accexamcompcnt {
+		/* 누적 검사 완료 수 */
+		display: none;
+	}
+	carecnt {
+		/* 치료 중인 환자 수 */
+		display: inline-block;
+		border-right: solid black 1px;
+		width: 150px;
+		text-align: center;
+	}
+	clearcnt {
+		/* 격리 해제 수 */
+		display: inline-block;
+		border-right: solid black 1px;
+		width: 155px;
+		text-align: center;
+	}
+	createdt {
+		/* 등록 일 시분초 */
+		display: none;
+	}
+	deathcnt {
+		/*사망자수*/
+		display: inline-block;
+		border-right: solid black 1px;
+		width: 156px;
+		text-align: center;
+	}
+	decidecnt {
+		/* 확진자수 */
+		display: inline-block;
+		border-right: solid black 1px;
+		width: 155px;
+		text-align: center;
+	}
+	seq {
+		display: none;
+	}
+	examcnt {
+		display: none;
+	}
+	resutlnegcnt {
+		display: none;
+	}
+	stateDt {
+		/* 기준일*/
+		display: inline-block;
+		width: 156px;
+		text-align: center;
+	}
+	statetime {
+		/*기준시간*/
+		display: none;
+	}
+	updatedt {
+		/*수정일시분초*/
+		display: none;
+	}
+	numofrows {
+		display: none;
+	}
+	pageno {
+		display: none;
+	}
+	totalcount {
+		display: none;
+	}

@@ -1,0 +1,126 @@
+@charset "UTF-8";
+body { 
+    background:  -webkit-linear-gradient(top, yellow ,white 10%);
+    background:  -moz-linear-gradient(top, yellow ,white 10%);
+    background:  -o-linear-gradient(top, yellow ,white 10%);
+    background:  linear-gradient(top, yellow ,white 10%);
+    background-repeat: no-repeat;
+}
+div {
+    border: 1px solid #ccc;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+#link {
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#container {
+    border: 0px solid #ccc;
+    width: 1050px;
+    padding: 10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#header {
+    background:red;
+    padding:10px;
+    margin-bottom:5px;
+}
+.header_text { 
+    Color:black; 
+    text-align:center; 
+}
+#contents {
+    width:770px;
+    padding-left: 10px;
+    padding-bottom:20px;
+    margin-bottom:10px;
+    float:left;
+}
+.contents-board {
+    margin-top: 20px;
+}
+#sidebar-loginbox {
+    display: inline-block;	
+    background-color:yellow;
+    margin-left:5px;
+    width: 260px;
+    height: 140px;
+    margin-bottom:20px;
+    text-align: center;
+}
+.login_tema_after {
+    border: solid black 1px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 20px;
+    line-height: 10px;
+    text-align: center;
+    width: 70px;
+    height: 40px;
+    line-height: 35px;
+}
+.login_tema_after:hover {
+    background-color: chocolate;
+}
+.login_tema_after a {
+    font-size: 16px;
+}
+#contents-board {
+    width: 100%;
+    border: solid black 1px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#board_title {
+    font-weight: bold;
+}
+.col1 {
+    display: inline-block;
+    margin: 0;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+}
+.col2 {
+    display: inline-block;
+    margin: 0;
+    width: 600px;
+    height: 50px;
+    padding: 5px;
+    text-align: left;
+}
+.subject {
+    width: 500px;
+    height: 20px;
+}
+.content {
+    width: 500px;
+    height: 100px;
+}
+.gle {
+    width: 100px;
+    height: 40px;
+    border: solid 1px lightskyblue;
+    background-color:lightskyblue;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#footer {
+    margin-top: 5%;
+    clear:both;
+    padding:20px;
+}
