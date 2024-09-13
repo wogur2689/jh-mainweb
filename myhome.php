@@ -164,7 +164,7 @@
 			<?php
 			$ch = curl_init();
 			$url = 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson'; /*URL*/
-			$queryParams = '?' . urlencode('ServiceKey') .'='.'5bYn08E59pd5Ra6rf2mgWSJkpQLh2ZF0aZzOnORHR8EUjgNfhPPmzujWj7aYKJyD0H4cPXj3A05r043diJ%2BIaA%3D%3D'; /*Service Key*/
+			$queryParams = '?' . urlencode('ServiceKey') .'='.'test'; /*Service Key*/
 			$queryParams .= '&' . urlencode('pageNo') . '=' . urlencode('1'); /**/
 			$queryParams .= '&' . urlencode('numOfRows') . '=' . urlencode('1'); /**/
 			$queryParams .= '&' . urlencode('startCreateDt') . '=' . urlencode(date("Ymd")); /**/
